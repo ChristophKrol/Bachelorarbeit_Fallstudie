@@ -15,6 +15,13 @@ public class AVLTree <T extends Comparable<T>>{
         this.root = new AVLNode<>(value);
     }
 
+    public AVLTree(AVLNode<Integer> root) {
+    }
+
+    public AVLTree() {
+
+    }
+
     /**
      *
      * @return Gibt die Wurzel aus.
