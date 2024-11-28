@@ -54,30 +54,4 @@ public class Xor {
         }
         return newKey;
     }
-
-
-
-    public static void main(String[] args) {
-        String message = "Geheimnachricht";
-        String key = "secret";
-        System.out.println("TEst: " + convertToHex(message));
-
-
-        System.out.println("Message Hex Array: " + convertToHexArray(message));
-        List<String> encryptedMessage = xorEncrypt(message, key);
-        System.out.println("Encrypted Message: " + encryptedMessage);
-
-        String decryptedMessage = xorDecrypt(encryptedMessage, key);
-        System.out.println("Decrypted Message: " + decryptedMessage);
-
-        // Example from lecture
-        String klartext = "Klartext";
-        String schluessel = "Schluess";
-
-        List<String> encrypted = xorEncrypt(klartext, schluessel);
-        System.out.println("Encrypted: " + encrypted);
-
-        System.out.println("Decrypted: " + xorDecrypt(encrypted, schluessel));
-    }
-
 }
